@@ -100,27 +100,4 @@ export class LoadUsersFail extends PayloadAction<any> {
 }
 ```
 
-## Arxjs tooltips
-
-Inside your Module file add TooltipDirective and TooltipService
-```typescript
-
-import { TooltipDirective, TooltipService } from 'arxjs';
-...
-
-@NgModule({
-  ...
-  exports: [ TooltipDirective ],
-  declarations: [ TooltipDirective ],
-  providers: [ TooltipService ]
-})
-```
-
-Now add arxjsTooltip attribute to your component
-```
-<component arxjsTooltip tooltipTitle="Hello arxjs tooltip" placement="right"></component>
-<component arxjsTooltip [tooltipTitle]="TITLE_VARIABLE" [placement]="POSITION_VARIABLE"></component>
-```
-As you can see Arxjs Tooltip has 2 arguments tooltipTitle and placement( right, left, top, bottom )
-
 See the package [arxjs](https://github.com/Armen96/arxjs) for more information.
